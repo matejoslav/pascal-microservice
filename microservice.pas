@@ -1,6 +1,8 @@
 program microservice;
 
-{$mode objfpc}{$H+}uses
+{$mode objfpc}{$H+}
+
+uses
   {$IFDEF UNIX}cthreads, cmem,{$ENDIF}
   SysUtils, fphttpapp, httpdefs, httproute, fpjson, jsonparser;
 
